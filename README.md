@@ -4,5 +4,6 @@ Web scraper that find data on doctors using http://www.cpso.on.ca/Public-Registe
 
 Build:
 - gradle clean assemble
-Run 
-java -jar build/libs/doctor-scrapper.jar input.xlsx D:\out.txt
+
+Run: 
+- java -jar build/libs/doctor-scrapper.jar input.xlsx D:\out.txt
