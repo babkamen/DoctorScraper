@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+jar {
+    baseName "doctor-scrapper"
+}
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+repositories {
+    mavenLocal()
+    jcenter()
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+    compile 'net.sourceforge.htmlunit:htmlunit:2.21'
+    compile 'org.apache.poi:poi:3.9'
+    compile 'org.apache.poi:poi-ooxml:3.9'
+    testCompile 'junit:junit:4.12'
+    testCompile  'org.hamcrest:hamcrest-all:1.3'
+
+}
