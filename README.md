@@ -1,3 +1,8 @@
-# DoctorScraper git init git add README.md git commit -m first commit git remote add origin https://github.com/babkamen/DoctorScraper.git git push -u origin master
-# DoctorScraper git init git add README.md git commit -m first commit git remote add origin https://github.com/babkamen/DoctorScraper.git git push -u origin master
 # DoctorScraper
+
+Web scraper that find data on doctors using http://www.cpso.on.ca/Public-Register/All-Doctors-Search to find doctors by first name and last name that is defined in excel file
+
+Build:
+- gradle clean assemble
+Run 
+java -jar build/libs/doctor-scrapper.jar input.xlsx D:\out.txt
